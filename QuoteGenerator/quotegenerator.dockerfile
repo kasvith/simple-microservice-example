@@ -8,7 +8,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Copy current directory into the created directory
-ADD . /usr/src/app
+COPY . /usr/src/app
 
 # Install all dependencies
 RUN python -mpip install -r requrinments.txt
