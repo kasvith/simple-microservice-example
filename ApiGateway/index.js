@@ -1,8 +1,11 @@
 const express = require('express')
 const axios = require('axios')
+const cors = require('cors')
 const app = express()
 
 const QUOTES_API_GATEWAY = process.env.QUOTES_API
+
+app.use(cors())
 
 app.get('/api/status', (req, res) => {
     return res.json({status: 'ok'})
