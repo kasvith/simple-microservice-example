@@ -10,7 +10,7 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/randomquote',async (req, res) => {
     try {
-        const url = QUOTES_API_GATEWAY + '/api/qoute'
+        const url = QUOTES_API_GATEWAY + '/api/quote'
         const quote = await axios.get(url)
         return res.json({
             time: Date.now(),

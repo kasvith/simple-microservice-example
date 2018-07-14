@@ -24,7 +24,7 @@ def loadQuotes():
 app = Flask(__name__)
 
 # Gets a random quote 
-@app.route("/api/qoute")
+@app.route("/api/quote")
 def quote():
     q = random.choice(quotes) # selects a random quote from file
     return jsonify({"quote": q.quote, "by": q.by}) # return a quote
