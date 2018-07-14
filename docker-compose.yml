@@ -11,7 +11,7 @@ services:
       context: ./ApiGateway
       dockerfile: app.dockerfile
     environment:
-      - "QUOTE_API=quotes"
+      - "QUOTES_API=quotes"
     depends_on:
       - quotes
     ports:
