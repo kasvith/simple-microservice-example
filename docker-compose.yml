@@ -4,8 +4,6 @@ services:
     build:
       context: ./QuoteService
       dockerfile: app.dockerfile
-    ports:
-      - "5000:5000"
   api:
     build:
       context: ./ApiGateway
@@ -16,4 +14,10 @@ services:
       - quotes
     ports:
       - "3000:3000"
+  frontend:
+    build:
+      context: ./FrontendApplication
+      dockerfile: app.dockerfile
+    ports:
+      - "8080:80"
     
