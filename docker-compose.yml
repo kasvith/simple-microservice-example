@@ -1,11 +1,19 @@
 version: '3'
 services:
-  quoteService:
+  quotes:
     build:
-      context: ./
+      context: ./QuoteService
       dockerfile: app.dockerfile
-    working_dir: /var/www
     ports:
      - "5000:5000"
-  apiGateway:
+  api:
+    build:
+      context: ./ApiGateway
+      dockerfile: app.dockerfile
+    environment:
+      - "QUOTE_API=quotes"
+    depends_on:
+      - quotes
+    ports:
+      - "3000:3000"
     
