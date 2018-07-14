@@ -14,7 +14,7 @@ A very simple microservice example with NodeJS, Python and Docker
 
 ## Build the frontend
 
-The application uses a frontend written with plain html with jQuery and to style with Bulma
+The application uses a frontend written with plain html with jQuery and to style with Bulma.
 This is built with webpack. This default application is built assuming you are using the `localhost`.
 
 To build this to fit your own **IP Address** please follow the steps before you running the `docker-compose up`
