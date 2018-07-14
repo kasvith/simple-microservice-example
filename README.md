@@ -26,7 +26,7 @@ To build this to fit your own **IP Address** please follow the steps before you 
 - Run `npm install` or if you have yarn `yarn` to install packages
 
 - Now you need to set the API Gateway for this frontend application. It can be any host you have. 
-    - Lets say you are hosting this application on `http://example.com` then your `API_GATEWAY` would be this one. 
+    - Let's say you are hosting this application on `http://example.com` then your `API_GATEWAY` would be this one. 
     - If you are hosting in some machine with IP `123.324.345.1` then your `API_GATEWAY` would be your IP.
 
 - To pass this setting to webpack build you need to set an Environment Variable
