@@ -27,6 +27,5 @@ app.get('/api/randomquote',async (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log(process.env.QUOTES_API)
     console.log('API Gateway is listening on port 3000!')
 })
