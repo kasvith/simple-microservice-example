@@ -40,4 +40,4 @@ To build this to fit your own **IP Address** please follow the steps before you 
 
 - Now run the `docker-compose up` on the root folder of project and check `http://YOUR_HOST:8080` to see web app 
 
-
+![image](https://user-images.githubusercontent.com/13379595/42726706-82eb0ae6-87b6-11e8-8456-d933b9dfa73b.png)
