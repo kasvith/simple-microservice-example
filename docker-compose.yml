@@ -4,14 +4,12 @@ services:
     build:
       context: ./QuoteService
       dockerfile: app.dockerfile
-    ports:
-     - "5000:5000"
   api:
     build:
       context: ./ApiGateway
       dockerfile: app.dockerfile
     environment:
-      - "QUOTES_API=quotes"
+      - "QUOTES_API=http://quotes:5000"
     depends_on:
       - quotes
     ports:
